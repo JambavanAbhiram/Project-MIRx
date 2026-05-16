@@ -20,6 +20,14 @@ The system is currently deployed and functioning successfully in a live environm
 
 ---
 
+# Demo
+<img width="1918" height="1078" alt="Recording 2026-05-16 113429" src="https://github.com/user-attachments/assets/11654135-c595-4a0d-82e4-ee329604113c" />
+<img width="959" height="539" alt="Screenshot 2026-05-16 113225" src="https://github.com/user-attachments/assets/419e4f1e-d8dc-4d12-abe3-e700ac4889e4" />
+<img width="959" height="539" alt="Screenshot 2026-05-16 113147" src="https://github.com/user-attachments/assets/04a36e49-fbe1-4362-9265-640553b588df" />
+
+
+
+
 # Problem Statement
 
 Traditional keyword-based medical search systems struggle with:
