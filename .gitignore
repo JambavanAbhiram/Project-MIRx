@@ -1,25 +1,15 @@
-# =========================
 # Python
-# =========================
-
 __pycache__/
 *.py[cod]
-*$py.class
 *.so
 
-# =========================
-# Virtual Environments
-# =========================
-
+# Virtual environments
 .venv/
 venv/
 env/
 ENV/
 
-# =========================
-# Environment / Secrets
-# =========================
-
+# Environment / secrets
 .env
 .env.*
 !.env.example
@@ -28,67 +18,31 @@ ENV/
 *.key
 *.crt
 
-secrets/
-credentials/
-*.secret
-
-# =========================
-# Data
-# =========================
-
-data/
-
-# Explicitly ignore common generated/data files
+# CSV datasets - NEVER commit
 *.csv
-*.pkl
-*.pickle
-*.npy
-*.npz
-*.faiss
-*.index
-*.bin
-*.parquet
-*.feather
+**/*.csv
 
-# =========================
 # Jupyter
-# =========================
-
 .ipynb_checkpoints/
 
-# =========================
 # IDE
-# =========================
-
 .vscode/
 .idea/
 
-# =========================
 # OS
-# =========================
-
 .DS_Store
 Thumbs.db
 
-# =========================
 # Logs
-# =========================
-
 *.log
 logs/
 
-# =========================
-# Build / Distribution
-# =========================
-
+# Build
 build/
 dist/
 *.egg-info/
 
-# =========================
-# Streamlit
-# =========================
-
+# Streamlit secrets
 .streamlit/secrets.toml
 
 # =========================
