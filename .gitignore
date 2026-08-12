@@ -45,10 +45,6 @@ dist/
 # Streamlit secrets
 .streamlit/secrets.toml
 
-# =========================
-# SSH tokens
-# =========================
-
-.yes
+# ssh tokens 
 *.pub
 yes
