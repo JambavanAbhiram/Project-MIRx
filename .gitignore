@@ -1,0 +1,98 @@
+# =========================
+# MIRx - Git Ignore
+# =========================
+
+# -------------------------
+# Python virtual environments
+# -------------------------
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+mIRx-env/
+mirx-env/
+
+# -------------------------
+# Python cache / compiled files
+# -------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# -------------------------
+# Jupyter
+# -------------------------
+.ipynb_checkpoints/
+
+# -------------------------
+# Environment / secrets
+# -------------------------
+.env
+.env.*
+!.env.example
+
+# -------------------------
+# Generated MIRx artifacts
+# Large/generated embedding files should not be committed
+# -------------------------
+artifacts/embeddings.npy
+artifacts/metadata.parquet
+artifacts/embedding_config.json
+
+# -------------------------
+# Dataset files
+# Keep raw and processed datasets out of Git
+# -------------------------
+data/raw/*.csv
+data/processed/*.csv
+data/raw/*.parquet
+data/processed/*.parquet
+
+# -------------------------
+# Logs / temporary files
+# -------------------------
+*.log
+*.tmp
+*.temp
+*.cache
+
+# -------------------------
+# IDE / editor files
+# -------------------------
+.vscode/
+.idea/
+*.code-workspace
+
+# -------------------------
+# OS generated files
+# -------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# -------------------------
+# Build / packaging
+# -------------------------
+build/
+dist/
+*.egg-info/
+
+# -------------------------
+# Test / coverage
+# -------------------------
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# -------------------------
+# Miscellaneous
+# -------------------------
+*.bak
+*.swp
+*.swo
