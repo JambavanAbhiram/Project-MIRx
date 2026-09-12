@@ -96,3 +96,32 @@ htmlcov/
 *.bak
 *.swp
 *.swo
+
+# ================================
+# MIRx Generated Artifacts
+# ================================
+
+# Qdrant local database
+artifacts/qdrant/
+
+# Generated embeddings
+artifacts/embeddings.npy
+
+# Generated metadata
+artifacts/metadata.parquet
+
+# Embedding configuration / generated metadata
+artifacts/embedding_config.json
+
+# Python virtual environment
+mirx-env/
+
+# Local datasets
+data/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.py[cod]
