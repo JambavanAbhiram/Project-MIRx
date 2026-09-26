@@ -1,7 +1,7 @@
 # =========================
 # MIRx - Git Ignore
 # =========================
-
+archive 
 # -------------------------
 # Python virtual environments
 # -------------------------
@@ -41,6 +41,7 @@ __pycache__/
 artifacts/embeddings.npy
 artifacts/metadata.parquet
 artifacts/embedding_config.json
+artifacts/evaluation
 
 # -------------------------
 # Dataset files
@@ -109,6 +110,12 @@ artifacts/embeddings.npy
 
 # Generated metadata
 artifacts/metadata.parquet
+
+# Generated ground truth annotation template
+artifacts/evaluation/ground_truth_annotation_template.json
+
+# Generated test queries
+artifacts/evaluation/test_queries.json
 
 # Embedding configuration / generated metadata
 artifacts/embedding_config.json
