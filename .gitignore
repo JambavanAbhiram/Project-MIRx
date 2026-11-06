@@ -3,6 +3,86 @@
 # =========================
 
 # -------------------------
+# Secrets / credentials
+# -------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.token
+id_rsa*
+id_ed25519*
+credentials*.json
+service-account*.json
+*secret*
+.huggingface/
+.netrc
+
+# -------------------------
+# Documents, slides and the paper (private, not part of the code)
+# -------------------------
+paper/
+*.pptx
+*.ppt
+*.potx
+*.odp
+*.docx
+*.doc
+*.dotx
+*.odt
+*.rtf
+*.pdf
+*.xlsx
+*.xls
+*.xlsm
+*.ods
+*.tex
+*.bib
+*.cls
+~$*
+
+# -------------------------
+# Data (never commit the dataset)
+# -------------------------
+data/
+
+# -------------------------
+# Generated artifacts: embeddings, indexes, models, studies
+# Large files go to the Hugging Face artifacts repo, not GitHub.
+# Only the small JSON configs in artifacts/ are kept.
+# -------------------------
+artifacts/*
+!artifacts/*.json
+artifacts/embedding_config.json
+artifacts/medcpt_embedding_config.json
+*.npy
+*.npz
+*.parquet
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# -------------------------
+# Notebooks (kept local for now)
+# -------------------------
+notebooks/
+archive/
+.ipynb_checkpoints/
+
+# -------------------------
+# Local tooling
+# -------------------------
+deploy/tools/
+.claude/
+
+# -------------------------
 # Python virtual environments
 # -------------------------
 .venv/
@@ -23,57 +103,6 @@ __pycache__/
 *.so
 
 # -------------------------
-# Jupyter
-# -------------------------
-.ipynb_checkpoints/
-
-# -------------------------
-# Environment / secrets
-# -------------------------
-.env
-.env.*
-!.env.example
-
-# -------------------------
-# Generated MIRx artifacts
-# Large/generated embedding files should not be committed
-# -------------------------
-artifacts/embeddings.npy
-artifacts/metadata.parquet
-artifacts/embedding_config.json
-
-# -------------------------
-# Dataset files
-# Keep raw and processed datasets out of Git
-# -------------------------
-data/raw/*.csv
-data/processed/*.csv
-data/raw/*.parquet
-data/processed/*.parquet
-
-# -------------------------
-# Logs / temporary files
-# -------------------------
-*.log
-*.tmp
-*.temp
-*.cache
-
-# -------------------------
-# IDE / editor files
-# -------------------------
-.vscode/
-.idea/
-*.code-workspace
-
-# -------------------------
-# OS generated files
-# -------------------------
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# -------------------------
 # Build / packaging
 # -------------------------
 build/
@@ -91,37 +120,26 @@ htmlcov/
 .nox/
 
 # -------------------------
-# Miscellaneous
+# Logs / temporary files
 # -------------------------
+*.log
+*.tmp
+*.temp
+*.cache
 *.bak
 *.swp
 *.swo
 
-# ================================
-# MIRx Generated Artifacts
-# ================================
+# -------------------------
+# IDE / editor files
+# -------------------------
+.vscode/
+.idea/
+*.code-workspace
 
-# Qdrant local database
-artifacts/qdrant/
-
-# Generated embeddings
-artifacts/embeddings.npy
-
-# Generated metadata
-artifacts/metadata.parquet
-
-# Embedding configuration / generated metadata
-artifacts/embedding_config.json
-
-# Python virtual environment
-mirx-env/
-
-# Local datasets
-data/
-
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
-
-# Python cache
-__pycache__/
-*.py[cod]
+# -------------------------
+# OS generated files
+# -------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
